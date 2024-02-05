@@ -5,10 +5,16 @@ echo "- AutotoolsToolchain: The toolchain generator for Autotools -"
 set -ex
 
 # Remove cache
-rm -rf conanbuild* conanrun* conanauto* deactivate* *.pc aclocal* auto* config.* Makefile.in depcomp install-sh missing Makefile configure string_formatter
+# if exist path `build' then remove.
+_d=build
+test -d $_d && rm -rf $_d
 
 # Then generate conanbuild.sh
-conan install -r conancenter . --build=missing
+conan install -r conancenter . --output-folder=build --build=missing
+cd build
+ln -s ../configure.ac
+ln -s ../Makefile.am
+ln -s ../src
 source conanbuild.sh
 
 # Build the example
@@ -26,8 +32,8 @@ source conanrun.sh
 output=$(./string_formatter)
 
 if [[ "$output" != 'Conan - The C++ Package Manager!' ]]; then
-    echo "ERROR: The String Formatter output does not match with the expected value: 'Conan - The C++ Package Manager!'"
-    exit 1
+	echo "ERROR: The String Formatter output does not match with the expected value: 'Conan - The C++ Package Manager!'"
+	exit 1
 fi
 
 echo 'AutotoolsToolchain example has been executed with SUCCESS!'
