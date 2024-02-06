@@ -1,0 +1,13 @@
+conancenter
+  gtk
+    gtk/3.24.24
+    gtk/4.0.2
+    gtk/4.1.2
+    gtk/4.2.1
+    gtk/4.3.2
+    gtk/4.4.0
+    gtk/4.6.2
+    gtk/4.7.0
+    gtk/system
+  gtk-doc-stub
+    gtk-doc-stub/cci.20181216

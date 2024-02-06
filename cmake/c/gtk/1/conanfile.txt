@@ -1,0 +1,6 @@
+[requires]
+gtk/4.0.2
+
+[generators]
+CMakeDeps
+CMakeToolchain
