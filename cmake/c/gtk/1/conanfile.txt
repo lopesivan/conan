@@ -1,5 +1,5 @@
 [requires]
-gtk/4.0.2
+gtk/system
 
 [generators]
 CMakeDeps
