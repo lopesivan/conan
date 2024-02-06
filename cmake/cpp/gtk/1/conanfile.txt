@@ -1,0 +1,6 @@
+[requires]
+gtk/system
+
+[generators]
+CMakeDeps
+CMakeToolchain
