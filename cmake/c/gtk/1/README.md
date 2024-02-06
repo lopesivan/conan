@@ -1,22 +1,22 @@
-# Hello Gtk4
+# Hello Gtk2
 
-This is a "Hello World" example of a GUI using Gtk version 4.
+This is a "Hello World" example of a GUI using Gtk version 2.
 Gtk is Linux only.
 
 ## Requirements
 
 - CMake
-- std 11
+- gcc
 - conan
-
 
 ## Build
 
 ```shell
-mkdir build && cd build
-conan install .. --build=missing
-cmake -DCMAKE_MODULE_PATH=$PWD -DCMAKE_BUILD_TYPE=Debug ..
+conan install . --output-folder=build --build=missing
+cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build .
+./hello
 ```
 
 ## See
