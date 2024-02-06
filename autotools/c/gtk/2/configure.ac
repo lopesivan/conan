@@ -4,7 +4,7 @@ AM_INIT_AUTOMAKE([1.10 -Wall no-define foreign])
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CANONICAL_HOST
 AC_CONFIG_FILES([Makefile])
-PKG_CHECK_MODULES([gtk], [gtk])
+PKG_CHECK_MODULES([GTK], [gtk+-3.0])
 AC_PROG_CC
 AC_PROG_CC_C_O
 AC_OUTPUT
