@@ -1,5 +1,5 @@
-bin_PROGRAMS = Myapp
+bin_PROGRAMS = myapp
 
-Myapp_SOURCES = main.c
-Myapp_CFLAGS  = -I$(top_srcdir)/lib
-Myapp_LDADD   = $(top_srcdir)/lib/libmyapp.a
+myapp_SOURCES = main.c
+myapp_CFLAGS  = -I$(top_srcdir)/lib
+myapp_LDADD   = $(top_srcdir)/lib/libmyapp.a

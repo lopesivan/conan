@@ -15,9 +15,7 @@ conan install . --build=missing
 source conanbuild.sh
 
 # Build the example
-aclocal
-automake --add-missing
-autoconf
+autoreconf --install
 ./configure
 make
 
@@ -29,5 +27,5 @@ source conanrun.sh
 #run
 #./hello
 # informação sobre o compilador
-objdump -s --section .comment hello
+objdump -s --section .comment src/myapp
 exit 0
