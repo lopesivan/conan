@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: SomaLib
+Description: Biblioteca para operações com somas
+Version: 3.0.1
+Libs: -L${libdir} -lsoma
+Cflags: -I${includedir}
