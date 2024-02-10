@@ -1,3 +1,5 @@
-noinst_LIBRARIES = libmyapp.a
-libmyapp_a_SOURCES = soma.c
+AUTOMAKE_OPTIONS = subdir-objects
+ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
+
+SUBDIRS = lib src
 
