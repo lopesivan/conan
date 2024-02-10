@@ -22,11 +22,7 @@ source conanbuild.sh
 aclocal
 automake --add-missing
 autoconf
-
-V=23.0.7599858
-NDK=${HOME}/Android/Sdk/ndk/${V}
-TOOLCHAINS=${NDK}/toolchains/llvm/prebuilt/linux-x86_64
-CC=${TOOLCHAINS}/bin/clang CXX=${TOOLCHAINS}/bin/clang++ ./configure
+./configure
 make
 
 source deactivate_conanbuild.sh
