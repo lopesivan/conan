@@ -1,5 +1,7 @@
-bin_PROGRAMS = myapp
+lib_LTLIBRARIES = libsoma.la
 
-myapp_SOURCES = main.c
-myapp_CFLAGS  = -I$(top_srcdir)/lib
-myapp_LDADD   = $(top_srcdir)/lib/libmyapp.a
+libsoma_la_SOURCES = soma.c
+libsoma_la_LDFLAGS = -version-info 3:1
+# libsoma__la_LDFLAGS = -release 27
+
+

@@ -1,5 +1,5 @@
 AUTOMAKE_OPTIONS = subdir-objects
 ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
 
-SUBDIRS = lib src
+SUBDIRS = src
 
