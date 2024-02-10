@@ -1,0 +1,58 @@
+- AutotoolsToolchain: The toolchain generator for Autotools -
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... /home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang accepts -g... yes
+checking for /home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang option to accept ISO C89... none needed
+checking whether /home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of /home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang... gcc3
+checking whether /home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang and cc understand -c and -o together... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+/home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -DPACKAGE_NAME=\"hello\" -DPACKAGE_TARNAME=\"hello\" -DPACKAGE_VERSION=\"0.1.0\" -DPACKAGE_STRING=\"hello\ 0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -I.    -I./src -g -MT src/hello-main.o -MD -MP -MF src/.deps/hello-main.Tpo -c -o src/hello-main.o `test -f 'src/main.c' || echo './'`src/main.c
+mv -f src/.deps/hello-main.Tpo src/.deps/hello-main.Po
+/home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -DPACKAGE_NAME=\"hello\" -DPACKAGE_TARNAME=\"hello\" -DPACKAGE_VERSION=\"0.1.0\" -DPACKAGE_STRING=\"hello\ 0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -I.    -I./src -g -MT src/hello-soma.o -MD -MP -MF src/.deps/hello-soma.Tpo -c -o src/hello-soma.o `test -f 'src/soma.c' || echo './'`src/soma.c
+mv -f src/.deps/hello-soma.Tpo src/.deps/hello-soma.Po
+/home/ivan/Android/Sdk/ndk/23.0.7599858/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -I./src -g   -o hello src/hello-main.o src/hello-soma.o  
+Restoring environment
+Restoring environment
+
+hello:     file format elf64-x86-64
+
+Contents of section .comment:
+ 0000 4743433a 20285562 756e7475 2031332e  GCC: (Ubuntu 13.
+ 0010 312e302d 38756275 6e747531 7e31382e  1.0-8ubuntu1~18.
+ 0020 30342920 31332e31 2e300041 6e64726f  04) 13.1.0.Andro
+ 0030 69642028 37323834 3632342c 20626173  id (7284624, bas
+ 0040 6564206f 6e207234 31363138 33622920  ed on r416183b) 
+ 0050 636c616e 67207665 7273696f 6e203132  clang version 12
+ 0060 2e302e35 20286874 7470733a 2f2f616e  .0.5 (https://an
+ 0070 64726f69 642e676f 6f676c65 736f7572  droid.googlesour
+ 0080 63652e63 6f6d2f74 6f6f6c63 6861696e  ce.com/toolchain
+ 0090 2f6c6c76 6d2d7072 6f6a6563 74206339  /llvm-project c9
+ 00a0 33356439 39643763 66323031 36323839  35d99d7cf2016289
+ 00b0 33303234 31326437 30383634 31643532  302412d708641d52
+ 00c0 64326637 65652900 4c696e6b 65723a20  d2f7ee).Linker: 
+ 00d0 4c4c4420 31322e30 2e352028 2f627569  LLD 12.0.5 (/bui
+ 00e0 6c64626f 742f7372 632f616e 64726f69  ldbot/src/androi
+ 00f0 642f6c6c 766d2d74 6f6f6c63 6861696e  d/llvm-toolchain
+ 0100 2f6f7574 2f6c6c76 6d2d7072 6f6a6563  /out/llvm-projec
+ 0110 742f6c6c 64206339 33356439 39643763  t/lld c935d99d7c
+ 0120 66323031 36323839 33303234 31326437  f2016289302412d7
+ 0130 30383634 31643532 64326637 65652900  08641d52d2f7ee).
+ 0140 00                                   .               
