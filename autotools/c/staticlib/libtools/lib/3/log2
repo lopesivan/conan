@@ -1,4 +1,3 @@
-- AutotoolsToolchain: The toolchain generator for Autotools -
 libtoolize: putting auxiliary files in '.'.
 libtoolize: copying file './ltmain.sh'
 libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
@@ -99,12 +98,12 @@ make  all-recursive
 make[1]: Entering directory '/workspace/obs/conan/autotools/c/staticlib/libtools/lib/3'
 Making all in src
 make[2]: Entering directory '/workspace/obs/conan/autotools/c/staticlib/libtools/lib/3/src'
-/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -DNDEBUG -I../include -I/usr/include/x86_64-linux-gnu -m64 -O3 -MT libsoma_la-soma.lo -MD -MP -MF .deps/libsoma_la-soma.Tpo -c -o libsoma_la-soma.lo `test -f 'soma.c' || echo './'`soma.c
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DNDEBUG -I../include -I/usr/include/x86_64-linux-gnu -m64 -O3 -MT libsoma_la-soma.lo -MD -MP -MF .deps/libsoma_la-soma.Tpo -c soma.c  -fPIC -DPIC -o .libs/libsoma_la-soma.o
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DNDEBUG -I../include -I/usr/include/x86_64-linux-gnu -m64 -O3 -MT libsoma_la-soma.lo -MD -MP -MF .deps/libsoma_la-soma.Tpo -c soma.c -o libsoma_la-soma.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -I../include -I/usr/include/x86_64-linux-gnu -g -O2 -MT libsoma_la-soma.lo -MD -MP -MF .deps/libsoma_la-soma.Tpo -c -o libsoma_la-soma.lo `test -f 'soma.c' || echo './'`soma.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I/usr/include/x86_64-linux-gnu -g -O2 -MT libsoma_la-soma.lo -MD -MP -MF .deps/libsoma_la-soma.Tpo -c soma.c  -fPIC -DPIC -o .libs/libsoma_la-soma.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I/usr/include/x86_64-linux-gnu -g -O2 -MT libsoma_la-soma.lo -MD -MP -MF .deps/libsoma_la-soma.Tpo -c soma.c -o libsoma_la-soma.o >/dev/null 2>&1
 mv -f .deps/libsoma_la-soma.Tpo .deps/libsoma_la-soma.Plo
-/bin/bash ../libtool  --tag=CC   --mode=link gcc -I../include -I/usr/include/x86_64-linux-gnu -m64 -O3 -version-info 3:1 -lavcodec -lavutil -lavformat -m64 -o libsoma.la -rpath /usr/local/lib libsoma_la-soma.lo  
-libtool: link: gcc -shared  -fPIC -DPIC  .libs/libsoma_la-soma.o   -lavcodec -lavutil -lavformat  -m64 -O3 -m64   -Wl,-soname -Wl,libsoma.so.3 -o .libs/libsoma.so.3.0.1
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -I../include -I/usr/include/x86_64-linux-gnu -g -O2 -version-info 3:1 -lavcodec -lavutil -lavformat  -o libsoma.la -rpath /workspace/lucas/lib libsoma_la-soma.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libsoma_la-soma.o   -lavcodec -lavutil -lavformat  -g -O2   -Wl,-soname -Wl,libsoma.so.3 -o .libs/libsoma.so.3.0.1
 libtool: link: (cd ".libs" && rm -f "libsoma.so.3" && ln -s "libsoma.so.3.0.1" "libsoma.so.3")
 libtool: link: (cd ".libs" && rm -f "libsoma.so" && ln -s "libsoma.so.3.0.1" "libsoma.so")
 libtool: link: ar cr .libs/libsoma.a  libsoma_la-soma.o
@@ -114,27 +113,3 @@ make[2]: Leaving directory '/workspace/obs/conan/autotools/c/staticlib/libtools/
 make[2]: Entering directory '/workspace/obs/conan/autotools/c/staticlib/libtools/lib/3'
 make[2]: Leaving directory '/workspace/obs/conan/autotools/c/staticlib/libtools/lib/3'
 make[1]: Leaving directory '/workspace/obs/conan/autotools/c/staticlib/libtools/lib/3'
-Restoring environment
-Restoring environment
--rw-rw-r-- 1 ivan ivan 225 fev 10 14:08 somalib.pc
-     1	prefix=/usr/local
-     2	exec_prefix=${prefix}
-     3	libdir=${exec_prefix}/lib
-     4	includedir=${prefix}/include
-     5	
-     6	Name: SomaLib
-     7	Description: Biblioteca para operações com somas
-     8	Version: 3.0.1
-     9	Libs: -L${libdir} -lsoma
-    10	Cflags: -I${includedir}
--rw-rw-r-- 1 ivan ivan 961 fev 10 14:08 ./src/libsoma.la
-total 28
-drwxrwxr-x 2 ivan ivan   180 fev 10 14:08 .
-drwxrwxr-x 4 ivan ivan   220 fev 10 14:08 ..
--rw-rw-r-- 1 ivan ivan  1574 fev 10 14:08 libsoma.a
-lrwxrwxrwx 1 ivan ivan    13 fev 10 14:08 libsoma.la -> ../libsoma.la
--rw-rw-r-- 1 ivan ivan   962 fev 10 14:08 libsoma.lai
--rw-rw-r-- 1 ivan ivan  1352 fev 10 14:08 libsoma_la-soma.o
-lrwxrwxrwx 1 ivan ivan    16 fev 10 14:08 libsoma.so -> libsoma.so.3.0.1
-lrwxrwxrwx 1 ivan ivan    16 fev 10 14:08 libsoma.so.3 -> libsoma.so.3.0.1
--rwxrwxr-x 1 ivan ivan 15640 fev 10 14:08 libsoma.so.3.0.1
