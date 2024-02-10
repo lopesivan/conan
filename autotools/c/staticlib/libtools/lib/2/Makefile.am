@@ -1,5 +1,6 @@
-AUTOMAKE_OPTIONS = subdir-objects
-ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
-
 SUBDIRS = src
 
+#dist_doc_DATA = README.md
+
+# Instalar arquivos de cabeçalho
+include_HEADERS = include/soma.h
