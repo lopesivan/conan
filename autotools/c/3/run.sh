@@ -10,12 +10,8 @@ _d=build
 test -d $_d && rm -rf $_d
 
 # Then generate conanbuild.sh
-conan install . --output-folder=build --build=missing
+conan install . --build=missing
 
-cd build
-ln -s ../configure.ac
-ln -s ../Makefile.am
-ln -s ../src
 source conanbuild.sh
 
 # Build the example
