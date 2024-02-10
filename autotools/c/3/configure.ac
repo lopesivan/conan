@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT([Myapp], [1.0], [seuemail@example.com])
+AC_INIT([myapp], [1.0], [seuemail@example.com])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 
 # Verificações para compiladores e ferramentas
