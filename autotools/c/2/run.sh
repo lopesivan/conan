@@ -10,7 +10,7 @@ _d=build
 test -d $_d && rm -rf $_d
 
 # Then generate conanbuild.sh
-conan install . --profile ./profile.clang --output-folder=build --build=missing
+conan install . --output-folder=build --build=missing
 
 cd build
 ln -s ../configure.ac
