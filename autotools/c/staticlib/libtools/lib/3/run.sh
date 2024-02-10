@@ -24,6 +24,7 @@ source deactivate_conanbuild.sh
 # Make dynamic library available on PATH
 source conanrun.sh
 
+ls -l somalib.pc
 ls -l ./src/libsoma.la
 ls -la ./src/.libs
 
