@@ -25,6 +25,7 @@ source deactivate_conanbuild.sh
 source conanrun.sh
 
 ls -l somalib.pc
+cat -n somalib.pc
 ls -l ./src/libsoma.la
 ls -la ./src/.libs
 
