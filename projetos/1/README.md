@@ -1,6 +1,6 @@
 # projeto
 
-Projeto com teste
+Create your first Conan package.
 
 ## Cria projeto
 
